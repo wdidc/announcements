@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+{{{body}}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script>
+  var moments = document.querySelectorAll(".js-moment")
+  for(var i = 0 ; i < moments.length; i++ ){
+    var mmt = moments[i]
+    mmt.innerHTML = moment(mmt.innerHTML,"X").fromNow()
+  }
+</script>
+</body>
+</html>
